@@ -2,7 +2,7 @@
 
 ## 다운로드
 
-[여기](https://drive.google.com/file/d/13K9DUtovtpBITO59GXGkOrNGLyfywJEp/view?usp=sharing)에서 다운할 수 있습니다.
+[여기](https://drive.google.com/file/d/13K9DUtovtpBITO59GXGkOrNGLyfywJEp/view?usp=sharing)에서 받을 수 있습니다.
 
 [바이러스 검사 결과](https://www.virustotal.com/gui/file/e336325e1b70379fa2ac1f88cf23c83ce7edd350ef13f1fdd418324a10fb1868/detection)
 
@@ -12,6 +12,12 @@
 (관리자 권한으로 실행하지 않을 경우 게임 도중에 키 인식을 하지 못합니다.)
 
 ![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png1.png) 
+
+### 미리 만들어진 스타일 다운로드
+
+[여기](https://drive.google.com/file/d/1SkoZzhNziQ7OKDXV5EVAhMgFDExuPmHM/view?usp=sharing)에서 받을 수 있습니다.   
+
+
 
 ## 기능
 
@@ -164,6 +170,12 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
 
 ### 키 흔적 커스터마이징
 
+해당 창은 아래 모양의 구조를 가집니다.
+
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
+
+따라서 아래처럼 css 선택자를 이용해 수정하시면 됩니다.
+
 #### 막대 나오는 곳의 기본 상태
 
     .trace-key {
@@ -222,4 +234,42 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
 
 ### 팀 점수 커스터마이징
 
+해당 창은 아래 모양의 구조를 가집니다.
 
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png3.png)   
+
+.ranking-item 영역은 블루팀이 이기는 경우 두 번째 그림처럼, 레드팀이 이기는 경우 세 번째 그림처럼 클래스가 지정됩니다.
+
+따라서 아래처럼 css 선택자를 이용해 수정하시면 됩니다.
+
+#### 각각의 아이템
+
+    .ranking-item {
+        // ...
+    }
+
+#### 등수 표시 구역
+
+    .rank-view {
+        // ...
+    }
+
+#### 각 팀 점수 표시 구역
+
+    .blue-score-view {
+        // 블루팀 점수 표시 구역
+    }
+
+    .red-score-view {
+        // 레드팀 점수 표시 구역
+    }
+
+#### 특정 팀이 이기는 아이템 선택
+
+    .blue-win {
+        // ...
+    }
+
+    .red-win {
+        // ...
+    }
