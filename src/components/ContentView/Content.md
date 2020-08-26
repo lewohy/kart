@@ -17,7 +17,9 @@
 
 [여기](https://drive.google.com/file/d/1SkoZzhNziQ7OKDXV5EVAhMgFDExuPmHM/view?usp=sharing)에서 받을 수 있습니다.   
 
+kart-util/settings 폴더 안에 내용물을 복사해서 적용할 수 있습니다.
 
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
 
 ## 기능
 
@@ -174,7 +176,7 @@ kart-util/settings 폴더 내의 key-trace-viewer.css 파일을 수정해서 설
 
 해당 창은 아래 모양의 구조를 가집니다.
 
-![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png3.png)   
 
 따라서 아래처럼 css 선택자를 이용해 수정하시면 됩니다.
 
@@ -240,7 +242,7 @@ kart-util/settings 폴더 내의 team-score-viewer.css 파일을 수정해서 �
 
 해당 창은 아래 모양의 구조를 가집니다.
 
-![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png3.png)   
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png4.png)   
 
 .ranking-item 영역은 블루팀이 이기는 경우 두 번째 그림처럼, 레드팀이 이기는 경우 세 번째 그림처럼 클래스가 지정됩니다.
 
