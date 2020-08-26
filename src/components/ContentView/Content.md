@@ -96,7 +96,7 @@ css 문법을 알아야 쉽게 사용하실 수 있습니다.
 
 ### 키뷰어 커스터마이징
 
-kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 설정할 수 있습니다.
+kart-util/settings 폴더 내의 key-viewer.css 파일을 수정해서 설정할 수 있습니다.
 
 #### 설정 버튼
 
@@ -116,7 +116,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         // ...
     }
 
-##### 특정 키의 기본 상태
+#### 특정 키의 기본 상태
 
 예를 들어 KEY VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
@@ -138,7 +138,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         // ...
     }
 
-##### 특정 키 안에 글자를 추가할 경우
+#### 특정 키 안에 글자를 추가할 경우
 
 가상 선택자를 이용해 해당 키 뒤에 새 요소를 추가하는 방식을 사용합니다.
 
@@ -170,6 +170,8 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
 
 ### 키 흔적 커스터마이징
 
+kart-util/settings 폴더 내의 key-trace-viewer.css 파일을 수정해서 설정할 수 있습니다.
+
 해당 창은 아래 모양의 구조를 가집니다.
 
 ![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
@@ -182,7 +184,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         // ...
     }
 
-##### 특정 키의 기본 상태
+#### 특정 키의 기본 상태
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
@@ -196,7 +198,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         background-color: rgba(120, 120, 120, 0.5);
     }
 
-##### 특정 키의 눌린 상태
+#### 특정 키의 눌린 상태
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
@@ -210,7 +212,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         // ...
     }
 
-##### 특정 키의 막대가 지나가는 공간
+#### 특정 키의 막대가 지나가는 공간
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
@@ -224,7 +226,7 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
         // ...
     }
 
-##### 특정 키의 막대
+#### 특정 키의 막대
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
@@ -233,6 +235,8 @@ kart-util 폴더 내의 key-viewer.css 파일을 수정해서 여러가지를 �
     }
 
 ### 팀 점수 커스터마이징
+
+kart-util/settings 폴더 내의 team-score-viewer.css 파일을 수정해서 설정할 수 있습니다.
 
 해당 창은 아래 모양의 구조를 가집니다.
 
