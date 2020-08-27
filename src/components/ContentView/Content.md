@@ -1,6 +1,6 @@
 # kart-util
 
-## 다운로드
+## 1. 다운로드
 
 [여기](https://drive.google.com/file/d/13K9DUtovtpBITO59GXGkOrNGLyfywJEp/view?usp=sharing)에서 받을 수 있습니다.
 
@@ -25,7 +25,7 @@ kart-util/settings 폴더 안에 내용물을 복사해서 적용할 수 있습�
 
 ![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
 
-## 기능
+## 2. 기능
 
 ### 키 뷰어 (Key Viewer)
 
@@ -88,9 +88,9 @@ kart-util/settings 폴더 안에 내용물을 복사해서 적용할 수 있습�
 
 ---
 
-아래부터는 직접 스타일을 만들고 싶으신 분만 읽으시면 됩니다.
+**아래부터는 직접 스타일을 만들고 싶으신 분만 읽으시면 됩니다.**
 
-## 커스터마이징
+## 3. 커스터마이징
 
 거의 모든 부분이 css를 사용해 커스터마이징이 가능합니다.
 
@@ -100,9 +100,11 @@ css 문법을 알아야 쉽게 사용하실 수 있습니다.
 
 #### 배경
 
-    body {
-        // ...
-    }
+```css
+body {
+    // ...
+}
+```
 
 ### 키뷰어 커스터마이징
 
@@ -110,43 +112,55 @@ kart-util/settings 폴더 내의 key-viewer.css 파일을 수정해서 설정할
 
 #### 설정 버튼
 
-    #setting-button {
-        // ...
-    }
+```css
+#setting-button {
+    // ...
+}
+```
 
 #### 종료 버튼
 
-    #exit-button {
-        // ...
-    }
+```css
+#exit-button {
+    // ...
+}
+```
    
 #### 모든 키의 기본 상태
 
-    .key-view {
-        // ...
-    }
+```css
+.key-view {
+    // ...
+}
+```
 
 #### 특정 키의 기본 상태
 
 예를 들어 KEY VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift.key-view {
-        // ...
-    }
+```css
+#left-shift.key-view {
+    // ...
+}
+```
 
 #### 모든 키의 눌린 상태
 
-    .key-view-pressed {
-        // ...
-    }
+```css
+.key-view-pressed {
+    // ...
+}
+```
 
 #### 특정 키의 눌린 상태
 
 예를 들어 KEY VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift.key-view-pressed {
-        // ...
-    }
+```css
+#left-shift.key-view-pressed {
+    // ...
+}
+```
 
 #### 특정 키 안에 글자를 추가할 경우
 
@@ -154,25 +168,29 @@ kart-util/settings 폴더 내의 key-viewer.css 파일을 수정해서 설정할
 
 먼저 아래 내용을 추가합니다.
 
-    .key-view::after {
-        width: auto;
-        height: auto;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        font-size: 18px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        position: absolute;
-    }
+```css
+.key-view::after {
+    width: auto;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+}
+```
 
 그 후 예를 들어 **left-shift**라는 이름의 키에 **DRIFT**라는 글자를 추가하고 싶을 경우
 
-    #left-shift::after {
-        content: "DRIFT";
-    }
+```css
+#left-shift::after {
+    content: "DRIFT";
+}
+```
 
 와 같이 하면 됩니다.
 
@@ -186,63 +204,81 @@ kart-util/settings 폴더 내의 key-trace-viewer.css 파일을 수정해서 설
 
 ![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png3.png)   
 
+왼쪽은 모든 키에 대해 설정할 때, 오른쪽은 특정 키에 대해 설정할 경우 참고하시면 됩니다.   
+
 따라서 아래처럼 css 선택자를 이용해 수정하시면 됩니다.
 
 #### 막대 나오는 곳의 기본 상태
 
-    .trace-key {
-        // ...
-    }
+```css
+.trace-key {
+    // ...
+}
+```
 
 #### 특정 키의 기본 상태
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift.trace-key {
-        // ...
-    }
+```css
+#left-shift.trace-key {
+    // ...
+}
+```
 
 #### 막대가 눌린 곳의 눌린 상태
 
-    .trace-key-pressed {
-        background-color: rgba(120, 120, 120, 0.5);
-    }
+```css
+.trace-key-pressed {
+    background-color: rgba(120, 120, 120, 0.5);
+}
+```
 
 #### 특정 키의 눌린 상태
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift.trace-key-pressed {
-        // ...
-    }
+```css
+#left-shift.trace-key-pressed {
+    // ...
+}
+```
 
 #### 막대가 지나가는 공간
 
-    .trace-frame {
-        // ...
-    }
+```css
+.trace-frame {
+    // ...
+}
+```
 
 #### 특정 키의 막대가 지나가는 공간
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift-frame {
-        // ...
-    }
+```css
+#left-shift-frame {
+    // ...
+}
+```
 
 #### 막대
 
-    .trace {
-        // ...
-    }
+```css
+.trace {
+    // ...
+}
+```
 
 #### 특정 키의 막대
 
 예를 들어 KEY TRACE VIEWER탭에서 등록한 키의 이름이 **left-shift**일 경우
 
-    #left-shift-trace {
-        // ...
-    }
+```css
+#left-shift-trace {
+    // ...
+}
+```
 
 ### 팀 점수 커스터마이징
 
@@ -258,35 +294,43 @@ kart-util/settings 폴더 내의 team-score-viewer.css 파일을 수정해서 �
 
 #### 각각의 아이템
 
-    .ranking-item {
-        // ...
-    }
+```css
+.ranking-item {
+    // ...
+}
+```
 
 #### 등수 표시 구역
 
-    .rank-view {
-        // ...
-    }
+```css
+.rank-view {
+    // ...
+}
+```
 
 #### 각 팀 점수 표시 구역
 
-    .blue-score-view {
-        // 블루팀 점수 표시 구역
-    }
+```css
+.blue-score-view {
+    // 블루팀 점수 표시 구역
+}
 
-    .red-score-view {
-        // 레드팀 점수 표시 구역
-    }
+.red-score-view {
+    // 레드팀 점수 표시 구역
+}
+```
 
 #### 특정 팀이 이기는 아이템 선택
 
-    .blue-win {
-        // ...
-    }
+```css
+.blue-win {
+    // ...
+}
 
-    .red-win {
-        // ...
-    }
+.red-win {
+    // ...
+}
+```
 
 ## 주의사항
 

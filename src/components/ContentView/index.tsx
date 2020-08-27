@@ -8,7 +8,20 @@ export default function ContentView(props: Readonly<{}>) {
     return (
         <div className="content-view">
             <ReactMarkdown
-                source={ Content } />
+                source={ Content }
+                renderers={ {
+                    "link": LinkRenderer
+                }} />
         </div>
+    );
+}
+
+function LinkRenderer(props: Readonly<any>) {
+    return (
+        <a
+            href={ props.href }
+            target="_blank">
+            { props.children }
+        </a>
     );
 }
