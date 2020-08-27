@@ -17,6 +17,10 @@
 
 [여기](https://drive.google.com/file/d/1SkoZzhNziQ7OKDXV5EVAhMgFDExuPmHM/view?usp=sharing)에서 받을 수 있습니다.   
 
+![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/gif9.gif)   
+
+위에부터 transparent-simple, white-simple, white-smooth, white-scale, rider-school순서입니다.   
+
 kart-util/settings 폴더 안에 내용물을 복사해서 적용할 수 있습니다.
 
 ![](https://raw.githubusercontent.com/lewohy/kart/master/res/images/png2.png)   
@@ -81,6 +85,10 @@ kart-util/settings 폴더 안에 내용물을 복사해서 적용할 수 있습�
 왼쪽에 블루팀 점수, 가운데 등수, 오른쪽에 레드팀 점수가 표시됩니다.   
    
 예를들어 3번째 칸이 파란색이 되었다면 3등까지 완주하고 4등부터 리타이어일 때 블루팀이 승리한다는 표시입니다.   
+
+---
+
+아래부터는 직접 스타일을 만들고 싶으신 분만 읽으시면 됩니다.
 
 ## 커스터마이징
 
@@ -279,3 +287,10 @@ kart-util/settings 폴더 내의 team-score-viewer.css 파일을 수정해서 �
     .red-win {
         // ...
     }
+
+## 주의사항
+
+kart-util/settings 폴더 안의 config.json파일을 임의로 수정이 가능합니다. 그러나 잘못 작성되어있거나 파일이 없는 경우 프로그램이 실행되지 않을 수 있습니다.    
+
+기본값으로 초기화를 하시려면 [여기](https://drive.google.com/file/d/1cvvoXB2VQXvHjkap0b2Y3dRAbV4be2mB/view?usp=sharing)에서 파일을 받아 settings 폴더에 넣어주세요.
+
